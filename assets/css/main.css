@@ -130,6 +130,7 @@
   transform-origin: calc(100% - 25px) top;
   animation: headerNotifyGrowth ease-in 0.2s;
   will-change: opacity, transform;
+  z-index: 2;
 }
 
 .header__notify::before {
@@ -437,9 +438,9 @@
   right: 3px;
   background-color: var(--white-color);
   box-shadow: 0 1px 10px #ccc;
-  display: none;
   animation: fadeIn linear 0.2s;
   cursor: default;
+  display: none;
 }
 
 .header__cart-lis--no-cart .header__cart-no-cart-img,
@@ -471,6 +472,90 @@
   margin-top: 14px;
   color: var(--text-color);
   display: none;
+}
+
+.header__cart-list-heading {
+  text-align: left;
+  margin: 8px 0 8px 12px;
+  font-size: 1.4rem;
+  color: #999;
+  font-weight: 400;
+}
+.header__cart-list-item {
+  padding: 0;
+  list-style: none;
+}
+.header__cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.header__cart-item:hover {
+  background-color: rgba(189, 179, 189, 0.089);
+}
+
+.header__cart-img {
+  width: 42px;
+  height: 42px;
+  margin: 6px 12px;
+  border: 1px solid #e8e8e8;
+}
+.header__cart-item-info {
+  width: 100%;
+  margin-right: 12px;
+}
+.header__cart-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__cart-item-name {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #555;
+}
+.header__cart-item-price {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+.header__cart-item-multiply {
+  font-size: 0.9rem;
+  margin: 0 3px;
+  color: #757575;
+}
+.header__cart-item-qnt {
+  font-size: 1.2rem;
+  /* margin-right: 10px; */
+  color: #757575;
+}
+.header__cart-item-body {
+  display: flex;
+  justify-content: space-between;
+}
+.header__cart-item-description {
+  font-size: 1.2rem;
+  color: #757575;
+  font-weight: 300;
+}
+.header__cart-item-remove {
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.header__cart-item-remove:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.header__cart-view-cart {
+  float: right;
+  margin: 0 12px 12px 0;
+}
+
+.header__cart-view-cart:hover {
+  background-color: #b8452e;
 }
 
 .header__search-input-wrap {
