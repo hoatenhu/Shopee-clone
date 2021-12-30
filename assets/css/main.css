@@ -536,7 +536,7 @@
   animation: fadeIn linear 0.2s;
   cursor: default;
   display: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__cart-lis--no-cart .header__cart-no-cart-img,
@@ -600,7 +600,7 @@
 }
 .header__cart-item-info {
   width: 100%;
-  /* margin-right: 12px; */
+  margin-right: 12px;
 }
 .header__cart-item-head {
   display: flex;
